@@ -3,9 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* debug */
-    border: 1px dotted #000000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+
 }
+
+img {
+    max-width: 100%;
+}
+
 
 /* COMMON */
 /* layout */
@@ -13,45 +19,64 @@
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-    /* debug */
-    min-width: 200px;
-
-}
-
-.section {
-    padding: 20px 0;
 }
 
 .small-container {
     width: 60%;
     max-width: 800px;
     margin: 0 auto;
-    /* debug; */
-    min-width: 200px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.section {
+    padding: 20px 0;
+}
+
+a:not(.text-black) {
+    text-decoration: none;
+    color: white;
+}
+
+.text-black {
+    text-decoration: none;
+    color: black;
+}
+
+
+.text-right {
+    text-align: right;
+}
+
+[class^="bottom"] {
+    display: inline-block;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 40px;
 }
 
 
 /* HEADER TOP*/
 .header-top {
-    background-color: #00c3ff;
+    background-color: #3161E0;
     padding: 10px;
 
 }
 
-.row {
-    display: flex;
-
-
+.bottom-top {
+    width: 70px;
+    background-color: #ffffff;
 }
 
-[class^="headercol"] {
-    width: 100%;
-    background-color: #d8ac59;
-    text-align: center;
-    /* debug */
-    height: 30px;
-
-
+.link-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
 }
 
 .headercol-20 {
@@ -66,16 +91,40 @@
 
 /* HEADER-BOT */
 .header-bot {
-    background: #0a04a0;
-
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 .small-col {
-    background-color: #e727e3;
-    width: 100%;
-    /* debug */
-    height: 200px
+    text-align: center;
+    padding: 80px;
+    color: white;
+    line-height: 40px;
 }
+
+.title {
+    margin: 40px;
+    font-size: 40px;
+
+}
+
+.bottom-white {
+    width: 150px;
+    background-color: #ffffff;
+}
+
+.arrow{font-size: ;}
+
+.bottom-black {
+    width: 250px;
+    background-color: #000000;
+}
+.ul-hb{
+    margin: 30px;
+}
+.arrow{font-size: 20px;
+    }
+
 
 /* /HEADER-BOT */
 
